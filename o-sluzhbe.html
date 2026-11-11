@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>О службе такси в Белыничах — одиннадцать лет работы</title>
+<meta name="description" content="Такси Белыничи: одиннадцать лет работы в городе и районе. Поездки по городу, между городами и за границу.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<style>
+:root{--paper:#F3F2ED;--paper2:#E8E7E0;--ink:#1F2327;--ink2:#585F65;--line:rgba(31,35,39,.15);--acc:#13703C;--acc2:#1B9A52;--asph:#23262A;--max:1240px;--pad:15px}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.62 'Golos Text',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4,p{margin:0}
+[hidden]{display:none!important}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.top{position:sticky;top:0;z-index:60;background:rgba(243,242,237,.94);border-bottom:1px solid var(--line);backdrop-filter:saturate(140%) blur(8px)}
+.top__in{display:flex;align-items:center;gap:clamp(10px,2vw,26px);min-height:72px}
+.logo{display:flex;align-items:center;gap:10px;font:800 17px/1 'Sofia Sans Extra Condensed',sans-serif;letter-spacing:.06em;text-transform:uppercase;flex:none}
+.logo__m{width:30px;height:30px;border-radius:50%;background:var(--acc);display:grid;place-items:center;color:#fff;font:800 15px/1 'Sofia Sans Extra Condensed'}
+.nav{display:flex;gap:clamp(10px,1.6vw,22px);margin-left:auto;flex-wrap:nowrap}
+.nav a{font:500 13px/1 'Golos Text';color:var(--ink2);white-space:nowrap;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover{color:var(--ink);border-color:var(--acc)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:0 20px;border:1px solid var(--ink);border-radius:2px;font:600 13px/1 'Golos Text';letter-spacing:.02em;cursor:pointer;background:transparent;color:var(--ink);transition:.18s}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn--acc{background:var(--acc);border-color:var(--acc);color:#fff}
+.btn--acc:hover{background:#0F5B31;border-color:#0F5B31;color:#fff}
+.burger{display:none;margin-left:auto;width:46px;height:46px;border:1px solid var(--line);background:#fff;border-radius:2px;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+.burger i{display:block;width:20px;height:2px;background:var(--ink)}
+@media (max-width:1024px){.nav{display:none}.burger{display:flex}}
+.drawer{position:fixed;inset:0;z-index:120;display:none;background:rgba(20,23,26,.55)}
+.drawer.is-open{display:block}
+.drawer__inner{position:absolute;inset:0;background:var(--paper);padding:22px var(--pad) 40px;display:flex;flex-direction:column;gap:4px;overflow-y:auto}
+.drawer__close{position:absolute;top:16px;right:var(--pad);width:46px;height:46px;border:1px solid var(--line);background:none;font:400 20px/1 system-ui;cursor:pointer}
+.drawer a{padding:14px 0;border-bottom:1px solid var(--line);font:600 18px/1.2 'Golos Text'}
+body.is-locked{overflow:hidden}
+.fbar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;grid-template-columns:1fr 1fr;gap:8px;padding:8px 10px;background:rgba(243,242,237,.97);border-top:1px solid var(--line)}
+@media (max-width:720px){.fbar{display:grid}body{padding-bottom:70px}}
+.hero{position:relative;min-height:clamp(440px,66vh,620px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,18,20,.28) 0%,rgba(15,18,20,.55) 45%,rgba(15,18,20,.86) 100%)}
+.hero__in{position:relative;z-index:2;width:100%;display:flex;flex-direction:column;gap:18px;padding:clamp(26px,4vw,52px) 0}
+.hero h1{font:800 clamp(2.4rem,6.6vw,5rem)/.92 'Sofia Sans Extra Condensed',sans-serif;letter-spacing:-.01em;text-transform:uppercase;max-width:20ch}
+.hero p{max-width:52ch;color:rgba(255,255,255,.9);font-size:clamp(14px,1.4vw,17px)}
+.hero__cta{display:flex;gap:10px;flex-wrap:wrap}
+.hero .btn{border-color:rgba(255,255,255,.6);color:#fff}
+.hero .btn:hover{background:#fff;color:var(--ink)}
+.hero .btn--acc{border-color:var(--acc)}
+@media (max-width:640px){.top .btn{display:none}.top__in{min-height:62px}.logo{font-size:15px}}
+@media (max-width:360px){.logo{font-size:14px}.logo__m{width:26px;height:26px}}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.v1.css">
+<meta property="og:title" content="О службе такси в Белыничах — одиннадцать лет работы">
+<meta property="og:description" content="Такси Белыничи: одиннадцать лет работы в городе и районе. Поездки по городу, между городами и за границу.">
+<meta property="og:type" content="website">
+</head><body>
+<header class="top"><div class="wrap top__in">
+  <a class="logo" href="index.html"><span class="logo__m">Б</span>Белыничи Такси</a>
+  <nav class="nav"><a href="uslugi.html">Услуги</a><a href="mezhgorod.html">Направления</a><a href="za-granicu.html">За границу</a><a href="avto.html">Авто</a><a href="o-sluzhbe.html">О службе</a><a href="kontakty.html">Контакты</a></nav>
+  <a class="btn btn--acc" href="tel:+375447023646">Позвонить</a>
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="drawer"><i></i><i></i><i></i></button>
+</div></header>
+<main>
+<section class="phero"><div class="wrap">
+  <p class="crumbs"><a href="index.html">Главная</a> · О службе</p>
+  <h1>Одиннадцать лет<br>в Белыничах</h1><p>Не агрегатор и не диспетчерская из другого города. Машина в Белыничах, водитель местный, дороги района знаем без навигатора.</p>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="grid2">
+    <div>
+      <span class="eyebrow">как работаем</span>
+      <h2>Просто и без<br>лишних слов</h2>
+      <p class="lead">Работаем в Белыничах с 2015 года. Возим по городу, в район, между городами и за границу. Разговариваем по-человечески: если поездка невозможна или невыгодна, скажем сразу, а не после того, как вы сядете в машину.</p>
+      <p class="lead">Сумму называем до выезда. Для дальних маршрутов согласуем время, остановки и обратную дорогу. Ночью и рано утром звоните — это обычная часть работы такси.</p>
+      <div class="alert">Не обещаем то, чего не можем: если маршрут за границу требует документов, которых нет, или времени в обрез — скажем об этом при заказе, а не на границе.</div>
+    </div>
+    <div class="ph"><img src="assets/img/sign.jpg" alt="Дорожный указатель на трассе" width="1200" height="900" loading="lazy"></div>
+  </div>
+</div></section>
+<section class="section section--asph"><div class="wrap">
+  <span class="eyebrow">принципы</span>
+  <h2>Четыре правила</h2>
+  <div class="steps">
+    <div class="step"><h4>Цена до поездки</h4><p>Называем сумму заранее. Если маршрут меняется — обсуждаем, а не ставим перед фактом.</p></div>
+    <div class="step"><h4>Время — деньги</h4><p>Приезжаем к назначенному времени. Если задерживаемся — предупреждаем звонком.</p></div>
+    <div class="step"><h4>Багаж — не проблема</h4><p>Помогаем донести и уложить. Для коляски и чемоданов скажите заранее.</p></div>
+    <div class="step"><h4>Без сюрпризов</h4><p>Обратную дорогу, ожидание и остановки согласуем в начале разговора.</p></div>
+  </div>
+</div></section>
+<section class="section"><div class="wrap">
+  <span class="eyebrow">контакты</span>
+  <h2>Позвоните</h2>
+  <p class="lead">Один номер, один водитель, один город. Отвечаем в любое время.</p>
+  <p style="margin-top:18px"><a class="big" href="tel:+375447023646">+375 (44) 702-36-46</a></p>
+  <p style="margin-top:14px"><a class="btn btn--acc" href="https://wa.me/375447023646" rel="noopener">Написать в WhatsApp</a> <a class="btn" href="kontakty.html" style="margin-left:8px">Все контакты</a></p>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap foot__in">
+  <div>
+    <div class="logo" style="color:#fff"><span class="logo__m">Б</span>Белыничи Такси</div>
+    <p style="margin-top:10px;max-width:34ch">Такси в Белыничах и по Беларуси. Одиннадцать лет на месте, поездки по городу, между городами и странами.</p>
+  </div>
+  <div class="foot__nav">
+    <a href="uslugi.html">Услуги</a><a href="mezhgorod.html">Направления</a><a href="za-granicu.html">За границу</a>
+    <a href="avto.html">Авто</a><a href="o-sluzhbe.html">О службе</a><a href="kontakty.html">Контакты</a><a href="politika.html">Политика</a>
+  </div>
+  <div>
+    <a class="big" href="tel:+375447023646" style="color:#fff;font:800 20px/1 'Sofia Sans Extra Condensed'">+375 (44) 702-36-46</a>
+    <p style="margin-top:8px">Могилёвская обл., Белыничи</p>
+  </div>
+</div>
+<div class="wrap copy">© 2026 Белыничи Такси. Информация на сайте не является публичной офертой.</div>
+</footer>
+<div class="fbar">
+  <a class="btn btn--acc" href="tel:+375447023646">Позвонить</a>
+  <a class="btn" href="https://wa.me/375447023646" rel="noopener">WhatsApp</a>
+</div>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Меню">
+  <div class="drawer__inner">
+    <button class="drawer__close" id="drawerClose" aria-label="Закрыть меню">×</button>
+    <div style="margin-bottom:14px"><span class="eyebrow">Меню</span></div>
+    <a href="uslugi.html">Услуги</a><a href="mezhgorod.html">Направления</a><a href="za-granicu.html">За границу</a><a href="avto.html">Авто</a><a href="o-sluzhbe.html">О службе</a><a href="kontakty.html">Контакты</a>
+    <a href="politika.html">Политика</a>
+    <a class="btn btn--acc" style="margin-top:22px" href="tel:+375447023646">Позвонить +375 (44) 702-36-46</a>
+  </div>
+</div>
+<script src="assets/js/main.v1.js" defer></script>
+</body></html>

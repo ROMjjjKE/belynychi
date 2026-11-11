@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Авто под заказ — такси Белыничи</title>
+<meta name="description" content="Машина под заказ в Белыничах: под число пассажиров и багаж. Чистый салон, рабочая машина, поездки по городу и межгород.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<style>
+:root{--paper:#F3F2ED;--paper2:#E8E7E0;--ink:#1F2327;--ink2:#585F65;--line:rgba(31,35,39,.15);--acc:#13703C;--acc2:#1B9A52;--asph:#23262A;--max:1240px;--pad:15px}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.62 'Golos Text',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4,p{margin:0}
+[hidden]{display:none!important}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.top{position:sticky;top:0;z-index:60;background:rgba(243,242,237,.94);border-bottom:1px solid var(--line);backdrop-filter:saturate(140%) blur(8px)}
+.top__in{display:flex;align-items:center;gap:clamp(10px,2vw,26px);min-height:72px}
+.logo{display:flex;align-items:center;gap:10px;font:800 17px/1 'Sofia Sans Extra Condensed',sans-serif;letter-spacing:.06em;text-transform:uppercase;flex:none}
+.logo__m{width:30px;height:30px;border-radius:50%;background:var(--acc);display:grid;place-items:center;color:#fff;font:800 15px/1 'Sofia Sans Extra Condensed'}
+.nav{display:flex;gap:clamp(10px,1.6vw,22px);margin-left:auto;flex-wrap:nowrap}
+.nav a{font:500 13px/1 'Golos Text';color:var(--ink2);white-space:nowrap;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover{color:var(--ink);border-color:var(--acc)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:0 20px;border:1px solid var(--ink);border-radius:2px;font:600 13px/1 'Golos Text';letter-spacing:.02em;cursor:pointer;background:transparent;color:var(--ink);transition:.18s}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn--acc{background:var(--acc);border-color:var(--acc);color:#fff}
+.btn--acc:hover{background:#0F5B31;border-color:#0F5B31;color:#fff}
+.burger{display:none;margin-left:auto;width:46px;height:46px;border:1px solid var(--line);background:#fff;border-radius:2px;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+.burger i{display:block;width:20px;height:2px;background:var(--ink)}
+@media (max-width:1024px){.nav{display:none}.burger{display:flex}}
+.drawer{position:fixed;inset:0;z-index:120;display:none;background:rgba(20,23,26,.55)}
+.drawer.is-open{display:block}
+.drawer__inner{position:absolute;inset:0;background:var(--paper);padding:22px var(--pad) 40px;display:flex;flex-direction:column;gap:4px;overflow-y:auto}
+.drawer__close{position:absolute;top:16px;right:var(--pad);width:46px;height:46px;border:1px solid var(--line);background:none;font:400 20px/1 system-ui;cursor:pointer}
+.drawer a{padding:14px 0;border-bottom:1px solid var(--line);font:600 18px/1.2 'Golos Text'}
+body.is-locked{overflow:hidden}
+.fbar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;grid-template-columns:1fr 1fr;gap:8px;padding:8px 10px;background:rgba(243,242,237,.97);border-top:1px solid var(--line)}
+@media (max-width:720px){.fbar{display:grid}body{padding-bottom:70px}}
+.hero{position:relative;min-height:clamp(440px,66vh,620px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,18,20,.28) 0%,rgba(15,18,20,.55) 45%,rgba(15,18,20,.86) 100%)}
+.hero__in{position:relative;z-index:2;width:100%;display:flex;flex-direction:column;gap:18px;padding:clamp(26px,4vw,52px) 0}
+.hero h1{font:800 clamp(2.4rem,6.6vw,5rem)/.92 'Sofia Sans Extra Condensed',sans-serif;letter-spacing:-.01em;text-transform:uppercase;max-width:20ch}
+.hero p{max-width:52ch;color:rgba(255,255,255,.9);font-size:clamp(14px,1.4vw,17px)}
+.hero__cta{display:flex;gap:10px;flex-wrap:wrap}
+.hero .btn{border-color:rgba(255,255,255,.6);color:#fff}
+.hero .btn:hover{background:#fff;color:var(--ink)}
+.hero .btn--acc{border-color:var(--acc)}
+@media (max-width:640px){.top .btn{display:none}.top__in{min-height:62px}.logo{font-size:15px}}
+@media (max-width:360px){.logo{font-size:14px}.logo__m{width:26px;height:26px}}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.v1.css">
+<meta property="og:title" content="Авто под заказ — такси Белыничи">
+<meta property="og:description" content="Машина под заказ в Белыничах: под число пассажиров и багаж. Чистый салон, рабочая машина, поездки по городу и межгород.">
+<meta property="og:type" content="website">
+</head><body>
+<header class="top"><div class="wrap top__in">
+  <a class="logo" href="index.html"><span class="logo__m">Б</span>Белыничи Такси</a>
+  <nav class="nav"><a href="uslugi.html">Услуги</a><a href="mezhgorod.html">Направления</a><a href="za-granicu.html">За границу</a><a href="avto.html">Авто</a><a href="o-sluzhbe.html">О службе</a><a href="kontakty.html">Контакты</a></nav>
+  <a class="btn btn--acc" href="tel:+375447023646">Позвонить</a>
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="drawer"><i></i><i></i><i></i></button>
+</div></header>
+<main>
+<section class="phero"><div class="wrap">
+  <p class="crumbs"><a href="index.html">Главная</a> · Авто</p>
+  <h1>Машина под заказ</h1><p>Подбираем машину под поездку: сколько вас, сколько чемоданов и куда едем. Если едете компанией или с крупным багажом — скажите заранее.</p>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="grid2">
+    <div class="ph"><img src="assets/img/wheel.jpg" alt="Вид из-за руля на дорогу" width="1200" height="900" loading="lazy"></div>
+    <div>
+      <span class="eyebrow">салон</span>
+      <h2>Что важно<br>в дороге</h2>
+      <p class="lead">Чистый салон без запаха, рабочее место водителя, исправные ремни. Машина готовится к поездке, а не «как получилось»: дальние рейсы согласовываем заранее, чтобы не было сюрпризов на середине пути.</p>
+      <div class="facts">
+        <div class="fact"><b>4</b><span>пассажира в легковой машине</span></div>
+        <div class="fact"><b>1</b><span>багажник под чемоданы и коляску</span></div>
+        <div class="fact"><b>11</b><span>лет опыта на дорогах района</span></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+<section class="section section--dim"><div class="wrap">
+  <span class="eyebrow">подбор</span>
+  <h2>Что подойдёт под вашу поездку</h2>
+  <div class="grid2" style="align-items:start">
+    <div>
+      <p class="lead">Отметьте, сколько вас и сколько вещей — подскажем, как лучше поехать, и на что обратить внимание при заказе.</p>
+      <div class="calc" style="margin-top:18px" id="pick">
+        <div class="crow"><label>Пассажиров</label><div class="chips" id="pax">
+          <button type="button" class="chip is-on" data-v="1">1</button><button type="button" class="chip" data-v="2">2</button>
+          <button type="button" class="chip" data-v="3">3</button><button type="button" class="chip" data-v="4">4</button></div></div>
+        <div class="crow"><label>Багаж</label><div class="chips" id="lug">
+          <button type="button" class="chip is-on" data-v="s">Сумка</button><button type="button" class="chip" data-v="m">Чемоданы</button>
+          <button type="button" class="chip" data-v="l">Много вещей</button></div></div>
+        <div class="crow"><label>Куда</label><div class="chips" id="dir">
+          <button type="button" class="chip is-on" data-v="city">По городу</button><button type="button" class="chip" data-v="inter">Межгород</button>
+          <button type="button" class="chip" data-v="abroad">За границу</button></div></div>
+        <div class="out"><span class="kk">рекомендация</span><b id="pickT">Легковая, один пассажир</b>
+          <div id="pickList" class="rlist"></div></div>
+      </div>
+    </div>
+    <div class="ph"><img src="assets/img/bags.jpg" alt="Чемоданы в багажнике перед поездкой" width="1200" height="900" loading="lazy"></div>
+  </div>
+</div></section>
+<section class="section"><div class="wrap">
+  <h2>Заказать машину</h2>
+  <p class="lead">Напишите, сколько вас и куда едем. Перезвоним и подтвердим время.</p>
+  <form class="form" id="lead" novalidate>
+  <input name="name" placeholder="Как вас зовут" aria-label="Имя" required>
+  <input name="phone" placeholder="Телефон или мессенджер" aria-label="Телефон" inputmode="tel" required>
+  <input name="from" placeholder="Откуда" aria-label="Откуда" value="Белыничи">
+  <input name="to" placeholder="Куда" aria-label="Куда" required>
+  <input name="when" placeholder="Когда: дата и время" aria-label="Когда" class="full">
+  <textarea name="msg" placeholder="Пассажиры, багаж, обратная дорога" aria-label="Комментарий" class="full"></textarea>
+  <button class="btn btn--acc full" type="submit">Отправить заявку</button>
+  <div class="form__msg" id="formMsg" role="status"></div>
+</form>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap foot__in">
+  <div>
+    <div class="logo" style="color:#fff"><span class="logo__m">Б</span>Белыничи Такси</div>
+    <p style="margin-top:10px;max-width:34ch">Такси в Белыничах и по Беларуси. Одиннадцать лет на месте, поездки по городу, между городами и странами.</p>
+  </div>
+  <div class="foot__nav">
+    <a href="uslugi.html">Услуги</a><a href="mezhgorod.html">Направления</a><a href="za-granicu.html">За границу</a>
+    <a href="avto.html">Авто</a><a href="o-sluzhbe.html">О службе</a><a href="kontakty.html">Контакты</a><a href="politika.html">Политика</a>
+  </div>
+  <div>
+    <a class="big" href="tel:+375447023646" style="color:#fff;font:800 20px/1 'Sofia Sans Extra Condensed'">+375 (44) 702-36-46</a>
+    <p style="margin-top:8px">Могилёвская обл., Белыничи</p>
+  </div>
+</div>
+<div class="wrap copy">© 2026 Белыничи Такси. Информация на сайте не является публичной офертой.</div>
+</footer>
+<div class="fbar">
+  <a class="btn btn--acc" href="tel:+375447023646">Позвонить</a>
+  <a class="btn" href="https://wa.me/375447023646" rel="noopener">WhatsApp</a>
+</div>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Меню">
+  <div class="drawer__inner">
+    <button class="drawer__close" id="drawerClose" aria-label="Закрыть меню">×</button>
+    <div style="margin-bottom:14px"><span class="eyebrow">Меню</span></div>
+    <a href="uslugi.html">Услуги</a><a href="mezhgorod.html">Направления</a><a href="za-granicu.html">За границу</a><a href="avto.html">Авто</a><a href="o-sluzhbe.html">О службе</a><a href="kontakty.html">Контакты</a>
+    <a href="politika.html">Политика</a>
+    <a class="btn btn--acc" style="margin-top:22px" href="tel:+375447023646">Позвонить +375 (44) 702-36-46</a>
+  </div>
+</div>
+<script src="assets/js/main.v1.js" defer></script>
+</body></html>
